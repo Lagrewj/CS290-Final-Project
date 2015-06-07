@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-image: url("wine2.JPG");
+  background-color: #40E0D0;
+  text-align: center;
+  font-family: Arial, Gadget, sans-serif;
+  font-size: 90px;
+  position: fixed;
+  color: #FA8072;
+  height: 130px;
+  width: 100%;
+}
+
+.banner1 {
+  background-image: url("wine2.JPG");
+  background-color: #40E0D0;
+  text-align: center;
+  font-family: Arial, Gadget, sans-serif;
+  font-size: 90px;
+  color: #FA8072;
+  height: 130px;
+  width: 100%;
+}
+
+.loginBar {
+  background-color: #778899;
+  text-align: right;
+  position: fixed;
+  color: #40E0D0;
+  margin-top: 130px;
+  padding-right: 50px;
+  height: 20px;
+  width: 100%;
+}
+
+.loginBar1 {
+  background-color: #778899;
+  text-align: right;
+  color: #40E0D0;
+  padding-right: 50px;
+  height: 20px;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #778899;
+  color: #40E0D0;
+  font-size: 1.2em;
+  margin-top: 150px;
+  padding-top: 30px;
+  padding-left: 30px;
+  position: fixed;
+  height: 1000px;
+  width: 250px;
+  float: left;
+}
+
+.navbar1 {
+  background-color: #778899;
+  color: #40E0D0;
+  font-size: 1.2em;
+  padding-top: 30px;
+  padding-left: 30px;
+  height: 1000px;
+  width: 250px;
+  float: left;
+}
+
+
+h1 {
+  font-family: Arial, Gadget, sans-serif;
+  font-weight: bold;
+}
+
+.content {
+  margin-top: 150px;
+  padding-left: 320px;
+  width: 50%;
+  float: left;
+}
+
+.content1 {
+  margin-top: 150px;
+  padding-left: 320px;
+}
+
+fieldset div {
+  padding: .3em;
+}
+
+#loginPadding {
+  height: 170px;
+  width: 100%;
+}
+#loginCenter {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#login {
+  width: 300px;
+}
+
+#createAcct {
+  text-align: right;
+  float: left;
+}
+
+#errorMsg1, #errorMsg2, #insertError {
+  color: red;
+}
