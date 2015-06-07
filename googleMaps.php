@@ -6,7 +6,7 @@ session_start();
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Add Wine</title>
+    <title>Google Maps Directions</title>
     <link rel="stylesheet" href="smbStyle.css">
   </head>
   
@@ -18,12 +18,13 @@ session_start();
     <div class="content">
       <?php
       if (isset($_SESSION['username'])) {
-        include 'addWinePage.php';
+        include 'Places_GoogleMaps.php';
       } else {
         echo 'You need to log in first<br>';
         echo '<a href="login.php">Login / Create Account</a>';
       }
       ?>
     </div>
+    
   </body>
 </html>

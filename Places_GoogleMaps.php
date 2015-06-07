@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'storedInfo.php';
 
 $mysqli = new mysqli($dbhost, $dbuser, $dbpass, $dbname);

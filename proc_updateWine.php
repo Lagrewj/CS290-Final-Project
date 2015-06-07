@@ -18,6 +18,7 @@ if ($_POST != NULL && $_POST['action'] == "Update Wine") {
     $newName = $_POST['update_name'];
     $newType = $_POST['update_type'];
     $newYear = $_POST['update_year'];
+	$newLocation = $_POST['update_location'];
     
     if ($newName != NULL) {
         echo "Made it to update name clause <br>";
@@ -60,6 +61,20 @@ if ($_POST != NULL && $_POST['action'] == "Update Wine") {
             echo "Execute failed: (" . $mysqli->errno . ") " . $mysqli->error;
         } else {
             echo 'You have successfully updated the wine year.<br>';
+        }
+    }
+	    if ($newLocation != NULL) {
+        if (!($stmt = $mysqli->prepare("UPDATE wines SET lid = ? WHERE id = ?"))) {
+        echo "Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error;
+        }
+        if (!$stmt->bind_param("ii", $newLocation, $updateID)) {
+            echo "Binding parameters failed: (" . $stmt->errno . ") "
+                 . $stmt->error;
+        }
+        if (!$stmt->execute()) {
+            echo "Execute failed: (" . $mysqli->errno . ") " . $mysqli->error;
+        } else {
+            echo 'You have successfully updated the wine location.<br>';
         }
     }
         $stmt->close();
